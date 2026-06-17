@@ -1,3 +1,12 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+#![allow(clippy::too_many_arguments)]
+#![allow(clippy::borrow_deref_ref)]
+#![allow(clippy::collapsible_if)]
+#![allow(clippy::while_let_loop)]
+#![allow(clippy::collapsible_match)]
+#![allow(clippy::unnecessary_unwrap)]
+
 mod core;
 mod crypto;
 mod network;
