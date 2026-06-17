@@ -1,0 +1,38 @@
+[package]
+name = "mshwisper"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-Config Cryptographically Secure LAN Mesh Communications"
+
+[[bin]]
+name = "mshwisper"
+path = "src/main.rs"
+
+[dependencies]
+ratatui          = "=0.26.3"
+crossterm        = "=0.27.0"
+tokio            = { version = "=1.36.0", features = ["rt-multi-thread","net","sync","time","io-util","macros","fs"] }
+x25519-dalek     = { version = "=1.2.0", features = ["u64_backend"] }
+aes-gcm          = { version = "=0.9.4", default-features = false, features = ["aes"] }
+rand_core_05     = { package = "rand_core", version = "=0.5.1", features = ["getrandom"] }
+rand             = "=0.8.5"
+sha2             = "=0.10.8"
+serde            = { version = "=1.0.195", features = ["derive"] }
+serde_json       = "=1.0.111"
+uuid             = { version = "=1.7.0", features = ["v4"] }
+chrono           = { version = "=0.4.33", features = ["serde"] }
+anyhow           = "=1.0.79"
+thiserror        = "=1.0.56"
+bytes            = "=1.5.0"
+unicode-segmentation = "=1.10.1"
+
+[target.'cfg(windows)'.dependencies]
+# Enable ANSI VT processing on Windows CMD
+winapi = { version = "0.3", features = ["consoleapi", "processenv", "winbase"] }
+
+[profile.release]
+opt-level     = 3
+lto           = true
+codegen-units = 1
+panic         = "abort"
+strip         = true

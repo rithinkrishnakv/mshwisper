@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  release:
+    name: Release ${{ matrix.target }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            artifact: mshwisper
+            asset_name: mshwisper-linux-x86_64
+
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact: mshwisper.exe
+            asset_name: mshwisper-windows-x86_64.exe
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - name: Build release
+        run: cargo build --release --target ${{ matrix.target }}
+      - name: Strip (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: strip target/${{ matrix.target }}/release/${{ matrix.artifact }}
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: target/${{ matrix.target }}/release/${{ matrix.artifact }}
+          name: ${{ matrix.asset_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
