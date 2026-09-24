@@ -1,8 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:6c2bd9&height=160&section=header&text=mshwisper&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Zero-Config%20%C2%B7%20Encrypted%20%C2%B7%20Serverless%20%C2%B7%20LAN%20Mesh%20Chat&descAlignY=58&descSize=18" width="100%"/>
+<img src="./assets/mshwisper-logo.png" alt="mshwisper" width="520"/>
 
-*Built for CTF teams, red teams, air-gapped labs — fast encrypted comms with no internet required.*
+### Zero-Config · Encrypted · Serverless · LAN Mesh Chat
+
+**Built for CTF teams, red teams, and air-gapped labs — fast encrypted communications with no internet required.**
+
+</div>
 
 ![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange?logo=rust)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20Android%20Termux-blue)
