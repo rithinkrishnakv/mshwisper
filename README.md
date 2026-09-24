@@ -2,19 +2,17 @@
 
 <img src="mshwisper-logo.png" alt="mshwisper" width="520"/>
 
+<div align="center">
+
+[![Rust](https://img.shields.io/badge/Rust-1.75%2B-3B82F6?logo=rust&logoColor=white&labelColor=0B1020)](https://www.rust-lang.org/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20Android%20Termux-22D3EE?labelColor=0B1020)](#)
+[![License](https://img.shields.io/badge/License-MIT-6366F1?labelColor=0B1020)](#)
+[![Crypto](https://img.shields.io/badge/Crypto-ECDH%20%2B%20AES--256--GCM-8B5CF6?labelColor=0B1020)](#)
+[![No Server](https://img.shields.io/badge/Server-None%20Needed-7C3AED?labelColor=0B1020)](#)
+[![Disk Writes](https://img.shields.io/badge/Disk%20Writes-Zero-38BDF8?labelColor=0B1020)](#)
 ### Zero-Config · Encrypted · Serverless · LAN Mesh Chat
-
 **Built for CTF teams, red teams, and air-gapped labs — fast encrypted communications with no internet required.**
-
 </div>
-
-![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange?logo=rust)
-![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20Android%20Termux-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Crypto](https://img.shields.io/badge/Crypto-ECDH%20%2B%20AES--256--GCM-purple)
-![No Server](https://img.shields.io/badge/Server-None%20Needed-critical)
-![Disk Writes](https://img.shields.io/badge/Disk%20Writes-Zero-lightgrey)
-
 <a href="#install">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=ECDH+Curve25519+%2B+AES-256-GCM;UDP+Mesh+Discovery+%E2%80%94+No+Server;Encrypted+File+Transfers+%26+Channels;RAM-Only+%E2%80%94+Zero+Disk+Writes" alt="Typing SVG" />
 </a>
