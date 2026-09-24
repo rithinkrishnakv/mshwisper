@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/mshwisper-logo.png" alt="mshwisper" width="520"/>
+<img src="mshwisper-logo.png" alt="mshwisper" width="520"/>
 
 ### Zero-Config · Encrypted · Serverless · LAN Mesh Chat
 
